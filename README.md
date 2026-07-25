@@ -153,7 +153,7 @@ http://localhost:5000
 ### Admin
 
 ```bash
-cd admin
+cd admin-frontend
 npm install
 npm run dev
 ```
@@ -169,7 +169,7 @@ http://localhost:5173
 ### Public Website
 
 ```bash
-cd public-website
+cd public-frontend
 npm install
 npm run dev
 ```
