@@ -38,7 +38,6 @@ https://content-management-system-bwf7.onrender.com
 - MongoDB
 - Mongoose
 - JWT Authentication
-- CORS
 - dotenv
 
 ### Deployment
@@ -114,11 +113,11 @@ The Admin Panel communicates with the backend through REST APIs. Page data is st
 cms-project/
 
 │
-├── admin/
+├── admin-frontend/
 │
 ├── backend/
 │
-├── public-website/
+├── public-frontend/
 │
 └── README.md
 ```
@@ -254,8 +253,6 @@ Password
 ```
 admin123
 ```
-
-(Change according to your project.)
 
 ---
 
