@@ -4,35 +4,41 @@ A full-stack Content Management System (CMS) that enables administrators to crea
 
 ---
 
-## Live Demo
+# Live Demo
 
-### Public Website
+## Public Website
+
 https://content-management-system-public.vercel.app/
 
-### Admin Panel
+## Admin Panel
+
 https://content-management-system-ebon.vercel.app/
 
-### Backend API
-https://content-management-system-bwf7.onrender.com
+## Backend API
+
+https://content-management-system-bwf7.onrender.com/
 
 ---
 
-## Tech Stack
+# Tech Stack
 
-### Public-Frontend
+## Public Frontend
+
 - React.js
 - React Router DOM
 - Axios
 - Tailwind CSS
 - React Icons
 
-### Admin Panel
+## Admin Panel
+
 - React.js
 - React Router DOM
 - Axios
 - Tailwind CSS
 
-### Backend
+## Backend
+
 - Node.js
 - Express.js
 - MongoDB
@@ -40,17 +46,18 @@ https://content-management-system-bwf7.onrender.com
 - JWT Authentication
 - dotenv
 
-### Deployment
+## Deployment
+
 - Frontend: Vercel
-- Admin: Vercel
+- Admin Panel: Vercel
 - Backend: Render
 - Database: MongoDB Atlas
 
 ---
 
-## Features
+# Features
 
-### Admin Panel
+## Admin Panel
 
 - Secure Admin Login
 - Dashboard
@@ -63,18 +70,18 @@ https://content-management-system-bwf7.onrender.com
 - SEO Description
 - Slug Management
 
-### Public Website
+## Public Website
 
 - Dynamic Routing
 - Dynamic Navigation
 - SEO-friendly URLs
 - Responsive Layout
 - CMS-driven Pages
-- Block Rendering
+- Dynamic Block Rendering
 
 ---
 
-## Supported Content Blocks
+# Supported Content Blocks
 
 - Heading
 - Paragraph
@@ -85,54 +92,241 @@ https://content-management-system-bwf7.onrender.com
 
 ---
 
-## Architecture Overview
+# Architecture Overview
 
+## High-Level Architecture
+
+```text
++----------------------+
+|     Admin Panel      |
+|   (React + Tailwind) |
++----------+-----------+
+           |
+           | REST API
+           |
+           ▼
++----------------------+
+|   Express Backend    |
+|  Authentication      |
+|  Page Management     |
+|  Block APIs          |
++----------+-----------+
+           |
+           |
+           ▼
++----------------------+
+|      MongoDB         |
+|  Pages Collection    |
+|  Admin Collection    |
++----------+-----------+
+           ▲
+           |
+           | REST API
+           |
++----------+-----------+
+|   Public Website     |
+|       React          |
+| Dynamic Page Render  |
++----------------------+
 ```
-               Admin Panel
-                     │
-                     │ REST API
-                     ▼
-              Express.js Backend
-                     │
-               Mongoose ODM
-                     │
-                     ▼
-              MongoDB Atlas
-                     │
-                     ▼
-          Public React Website
-```
 
-The application follows a headless CMS architecture, where the admin panel, backend API, and public website are separated into independent applications that communicate through REST APIs.
+The application follows a **Headless CMS Architecture**, where the Admin Panel, Backend API, and Public Website are completely independent applications communicating through REST APIs.
 
-Admin Panel (React + Tailwind CSS): Allows administrators to create, edit, publish, and manage pages using a block-based content editor. All content changes are sent to the backend through secure API endpoints.
+### Admin Panel
 
-Backend (Node.js + Express + MongoDB): Serves as the central content management layer. It handles authentication, CRUD operations for pages, validates requests, and stores structured page data in MongoDB. It exposes REST APIs consumed by both the admin panel and the public website.
+- Built with React and Tailwind CSS
+- Allows authenticated administrators to create, edit, publish, and delete pages
+- Uses a dynamic block editor
+- Sends all data through secured REST APIs
 
-Public Website (React): Dynamically renders published pages by requesting content from the backend based on the page slug. A reusable block renderer converts stored content blocks (headings, paragraphs, images, lists, tables, etc.) into responsive UI components, allowing new pages to appear without requiring code changes.
+### Backend
+
+- Built using Express.js and MongoDB
+- Handles Authentication using JWT
+- Provides CRUD APIs for pages
+- Stores structured content blocks
+- Serves both Admin Panel and Public Website
+
+### Public Website
+
+- Fetches only published pages
+- Dynamically renders pages using slug-based routing
+- Uses reusable Block Renderer components
+- No frontend code changes are required when new pages are created
 
 ---
 
-## Folder Structure
+# Application Flow
 
+```text
+Admin Login
+     │
+     ▼
+Create / Edit Page
+     │
+     ▼
+Store Page in MongoDB
+     │
+     ▼
+Public Website Requests Page
+     │
+     ▼
+Backend Fetches Page by Slug
+     │
+     ▼
+Block Renderer Renders Page Dynamically
 ```
-cms-project/
 
-│
-├── admin-frontend/
+---
+
+# Folder Structure
+
+```text
+content-management-system/
+
+├── admin/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── layouts/
+│   │   ├── utils/
+│   │   └── App.jsx
+│   └── package.json
 │
 ├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── config/
+│   ├── server.js
+│   └── package.json
 │
-├── public-frontend/
+├── public-website/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── utils/
+│   │   └── App.jsx
+│   └── package.json
 │
 └── README.md
 ```
 
 ---
 
-## Setup Instructions
+# Component Architecture
 
-### Clone Repository
+```text
+React App
+│
+├── Navbar
+│
+├── DynamicPage
+│      │
+│      ▼
+│   API Request
+│      │
+│      ▼
+│  BlockRenderer
+│      │
+│      ├── Heading
+│      ├── Paragraph
+│      ├── Image
+│      ├── List
+│      ├── Contact
+│      └── Table
+│
+└── Footer
+```
+
+---
+
+# Database Design
+
+## Admin Collection
+
+```text
+_id
+username
+password
+createdAt
+updatedAt
+```
+
+## Pages Collection
+
+```text
+_id
+title
+slug
+seoTitle
+seoDescription
+status
+blocks[]
+createdAt
+updatedAt
+```
+
+---
+
+# Request Flow
+
+```text
+Browser
+   │
+   ▼
+React Frontend
+   │
+   ▼
+Axios API Client
+   │
+   ▼
+Express Routes
+   │
+   ▼
+Controller
+   │
+   ▼
+MongoDB
+   │
+   ▼
+JSON Response
+   │
+   ▼
+React UI
+```
+
+---
+
+# Technology Interaction Diagram
+
+```text
+React (Admin)
+      │
+      │
+      ▼
+Express REST API
+      │
+ ┌────┴───────────────┐
+ ▼                    ▼
+Authentication   Page Management
+      │               │
+      └──────┬────────┘
+             ▼
+         MongoDB
+             ▲
+             │
+React Public Website
+             │
+ Dynamic Block Renderer
+```
+
+---
+
+# Setup Instructions
+
+## Clone Repository
 
 ```bash
 git clone https://github.com/vamshiyadavbollaboina/cms-assignment.git
@@ -140,7 +334,7 @@ git clone https://github.com/vamshiyadavbollaboina/cms-assignment.git
 
 ---
 
-### Backend
+## Backend
 
 ```bash
 cd backend
@@ -156,10 +350,10 @@ http://localhost:5000
 
 ---
 
-### Admin
+## Admin Panel
 
 ```bash
-cd admin-frontend
+cd admin
 npm install
 npm run dev
 ```
@@ -172,10 +366,10 @@ http://localhost:5173
 
 ---
 
-### Public Website
+## Public Website
 
 ```bash
-cd public-frontend
+cd public-website
 npm install
 npm run dev
 ```
@@ -188,94 +382,238 @@ http://localhost:5174
 
 ---
 
-## Environment Variables
+# Environment Variables
 
-Backend (.env)
+## Backend (.env)
 
-```
+```env
 PORT=5000
 
 MONGO_URI=your_mongodb_connection_string
 
-JWT_SECRET=your_jwt_secret
+JWT_SECRET=your_secret_key
 ```
 
-Admin-Frontend (.env)
+---
 
-```
-VITE_API_URL=http://localhost:5000/api
-```
+## Admin (.env)
 
-Public-Frontend (.env)
-
-```
+```env
 VITE_API_URL=http://localhost:5000/api
 ```
 
 ---
 
-## API Endpoints
+## Public Website (.env)
 
-### Authentication
+```env
+VITE_API_URL=http://localhost:5000/api
+```
 
+---
+
+# API Endpoints
+
+## Authentication
+
+### Login
+
+```
 POST /api/auth/login
+```
 
 ---
 
-### Pages
+## Pages
 
-GET /api/pages
-
-GET /api/pages/slug/:slug
-
-POST /api/pages
-
-PUT /api/pages/:id
-
-DELETE /api/pages/:id
-
----
-
-## Assumptions
-
-- Only authenticated administrators can manage pages.
-- Only published pages are visible on the public website.
-- Pages are uniquely identified using their slug.
-- MongoDB Atlas is used as the production database.
-- Images are referenced using URLs.
-
----
-
-## Sample Admin Credentials
-
-Email
+### Get All Pages
 
 ```
+GET /api/pages
+```
+
+### Get Page By Slug
+
+```
+GET /api/pages/slug/:slug
+```
+
+### Create Page
+
+```
+POST /api/pages
+```
+
+### Update Page
+
+```
+PUT /api/pages/:id
+```
+
+### Delete Page
+
+```
+DELETE /api/pages/:id
+```
+
+---
+
+# Assumptions
+
+- Only authenticated administrators can access the CMS.
+- Only pages with **Published** status are displayed on the public website.
+- Each page has a unique slug.
+- MongoDB Atlas is used in production.
+- Images are stored as URL references.
+- Public website consumes only published content.
+- JWT is used for authentication.
+
+---
+
+# Sample Admin Credentials
+
+**Email**
+
+```text
 admin@example.com
 ```
 
-Password
+**Password**
 
-```
+```text
 admin123
 ```
 
 ---
 
-## Future Improvements
+# Screenshots
 
-- Drag-and-drop block editor
-- Rich Text Editor
-- Media Library
-- Version History
-- Page Preview
-- Role-based Access Control
-- Search
-- Analytics
-- Theme Management
+Replace the placeholders below with your project screenshots.
+
+## 1. Public Website
+
+**Home Page**
+
+```
+Insert Screenshot Here
+```
 
 ---
 
-## Author
+## 2. Dynamic Page Rendering
 
-Bollaboina Vamshi Yadav
+**About / Services Page**
+
+```
+Insert Screenshot Here
+```
+
+---
+
+## 3. Admin Dashboard
+
+**Dashboard**
+
+```
+Insert Screenshot Here
+```
+
+---
+
+## 4. Page Management
+
+**Pages List**
+
+```
+Insert Screenshot Here
+```
+
+---
+
+## 5. Create / Edit Page
+
+**CMS Block Editor**
+
+```
+Insert Screenshot Here
+```
+
+---
+
+## 6. MongoDB Collection
+
+**Pages Collection**
+
+```
+Insert Screenshot Here
+```
+
+---
+
+## 7. Responsive Public Website
+
+**Mobile View**
+
+```
+Insert Screenshot Here
+```
+
+---
+
+# Future Improvements
+
+- Drag-and-Drop Block Editor
+- Rich Text Editor
+- Media Library
+- Version History
+- Live Preview
+- Role-Based Access Control (RBAC)
+- Search & Filtering
+- Analytics Dashboard
+- Theme Management
+- Page Scheduling
+- Multi-language Support
+- Image Upload Integration
+- Autosave Drafts
+- Content Revision History
+
+---
+
+# Technology Choices
+
+| Technology | Purpose |
+|------------|---------|
+| React.js | Frontend UI |
+| React Router DOM | Client-side Routing |
+| Axios | API Communication |
+| Tailwind CSS | Styling |
+| Node.js | Runtime Environment |
+| Express.js | REST API |
+| MongoDB Atlas | Database |
+| Mongoose | ODM |
+| JWT | Authentication |
+| Render | Backend Deployment |
+| Vercel | Frontend Deployment |
+
+---
+
+# Deliverables
+
+- ✅ Source Code
+- ✅ GitHub Repository
+- ✅ README Documentation
+- ✅ Environment Variable Templates
+- ✅ Sample Admin Credentials
+- ✅ Live Admin Panel
+- ✅ Live Public Website
+- ✅ Live Backend API
+
+---
+
+# Author
+
+**Bollaboina Vamshi Yadav**
+
+**GitHub:** https://github.com/vamshiyadavbollaboina
+
+**Project Repository:** https://github.com/vamshiyadavbollaboina/cms-assignment
