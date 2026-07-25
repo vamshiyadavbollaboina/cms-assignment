@@ -457,6 +457,7 @@ DELETE /api/pages/:id
 ```
 
 ---
+<img width="556" height="406" alt="image" src="https://github.com/user-attachments/assets/59eefe17-e6d1-433c-a99e-a4aa9faa45a2" />
 
 # Assumptions
 
