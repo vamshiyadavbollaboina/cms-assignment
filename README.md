@@ -514,7 +514,7 @@ Replace the placeholders below with your project screenshots.
 
 **Dashboard**
 
-<img width="600" height="550" alt="image" src="https://github.com/user-attachments/assets/b7e97166-f14c-4da1-b73b-1b65a5bbd6f7" />
+<img width="600" height="550" alt="image" src="https://github.com/user-attachments/assets/3c238eb4-7650-4504-b009-88bde3154c3a" />
 <img width="300" height="550" alt="image" src="https://github.com/user-attachments/assets/62b82f66-427f-4e59-a1bf-0f4cbb1ec1d5" />
 
 
@@ -524,7 +524,7 @@ Replace the placeholders below with your project screenshots.
 
 **Pages List**
 
-<img width="600" height="550" alt="image" src="https://github.com/user-attachments/assets/55f3df2d-745c-4136-9a43-c38553c2ff51" />
+<img width="600" height="550" alt="image" src="https://github.com/user-attachments/assets/5470cbb1-066f-4bb9-afc9-d0499ad9ff4d" />
 <img width="300" height="550" alt="image" src="https://github.com/user-attachments/assets/e32f634f-ece0-413e-9c13-d8e924a29ab0" />
 
 
