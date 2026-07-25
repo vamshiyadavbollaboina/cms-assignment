@@ -457,7 +457,7 @@ DELETE /api/pages/:id
 ```
 
 ---
-<img width="556" height="406" alt="image" src="https://github.com/user-attachments/assets/59eefe17-e6d1-433c-a99e-a4aa9faa45a2" />
+
 
 # Assumptions
 
@@ -496,7 +496,7 @@ Replace the placeholders below with your project screenshots.
 **Home Page**
 
 ```
-![Admin Dashboard](https://res.cloudinary.com/dq1rqwebs/image/upload/v1784985945/Screenshot_2026-07-25_185522_s5bvv5.png)
+<img width="912" height="890" alt="image" src="https://github.com/user-attachments/assets/09105c5a-2e03-4805-849a-fcb16a2cea91" />
 
 ```
 
