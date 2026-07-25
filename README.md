@@ -19,7 +19,7 @@ https://content-management-system-bwf7.onrender.com
 
 ## Tech Stack
 
-### Frontend (Public Website)
+### Public-frontend
 - React.js
 - React Router DOM
 - Axios
