@@ -524,7 +524,7 @@ Replace the placeholders below with your project screenshots.
 
 **Pages List**
 
-<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/55f3df2d-745c-4136-9a43-c38553c2ff51" />
+<img width="600" height="550" alt="image" src="https://github.com/user-attachments/assets/55f3df2d-745c-4136-9a43-c38553c2ff51" />
 <img width="300" height="550" alt="image" src="https://github.com/user-attachments/assets/e32f634f-ece0-413e-9c13-d8e924a29ab0" />
 
 
@@ -535,7 +535,7 @@ Replace the placeholders below with your project screenshots.
 
 **CMS Block Editor**
 
-<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/2002b9a6-061e-439d-8ac4-62469dd9ffc4" />
+<img width="600" height="550" alt="image" src="https://github.com/user-attachments/assets/2002b9a6-061e-439d-8ac4-62469dd9ffc4" />
 <img width="300" height="550" alt="image" src="https://github.com/user-attachments/assets/e3727470-6398-4440-b426-c9d7867d68d7" />
 
 
@@ -545,7 +545,7 @@ Replace the placeholders below with your project screenshots.
 
 **Pages Collection**
 
-<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/916f9611-85d0-4d53-bac6-2ea76a92ab2b" />
+<img height="300" alt="image" src="https://github.com/user-attachments/assets/916f9611-85d0-4d53-bac6-2ea76a92ab2b" />
 
 
 ---
