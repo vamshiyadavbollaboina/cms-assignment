@@ -514,8 +514,8 @@ Replace the placeholders below with your project screenshots.
 
 **Dashboard**
 
-<img width="1891" height="872" alt="image" src="https://github.com/user-attachments/assets/b7e97166-f14c-4da1-b73b-1b65a5bbd6f7" />
-<img width="365" height="646" alt="image" src="https://github.com/user-attachments/assets/62b82f66-427f-4e59-a1bf-0f4cbb1ec1d5" />
+<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/b7e97166-f14c-4da1-b73b-1b65a5bbd6f7" />
+<img width="300" height="550" alt="image" src="https://github.com/user-attachments/assets/62b82f66-427f-4e59-a1bf-0f4cbb1ec1d5" />
 
 
 ---
@@ -524,8 +524,8 @@ Replace the placeholders below with your project screenshots.
 
 **Pages List**
 
-<img width="1895" height="860" alt="image" src="https://github.com/user-attachments/assets/55f3df2d-745c-4136-9a43-c38553c2ff51" />
-<img width="450" height="796" alt="image" src="https://github.com/user-attachments/assets/e32f634f-ece0-413e-9c13-d8e924a29ab0" />
+<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/55f3df2d-745c-4136-9a43-c38553c2ff51" />
+<img width="300" height="550" alt="image" src="https://github.com/user-attachments/assets/e32f634f-ece0-413e-9c13-d8e924a29ab0" />
 
 
 
@@ -535,8 +535,8 @@ Replace the placeholders below with your project screenshots.
 
 **CMS Block Editor**
 
-<img width="840" height="805" alt="image" src="https://github.com/user-attachments/assets/2002b9a6-061e-439d-8ac4-62469dd9ffc4" />
-<img width="451" height="801" alt="image" src="https://github.com/user-attachments/assets/e3727470-6398-4440-b426-c9d7867d68d7" />
+<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/2002b9a6-061e-439d-8ac4-62469dd9ffc4" />
+<img width="300" height="550" alt="image" src="https://github.com/user-attachments/assets/e3727470-6398-4440-b426-c9d7867d68d7" />
 
 
 ---
@@ -545,7 +545,7 @@ Replace the placeholders below with your project screenshots.
 
 **Pages Collection**
 
-<img width="1416" height="259" alt="image" src="https://github.com/user-attachments/assets/916f9611-85d0-4d53-bac6-2ea76a92ab2b" />
+<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/916f9611-85d0-4d53-bac6-2ea76a92ab2b" />
 
 
 ---
