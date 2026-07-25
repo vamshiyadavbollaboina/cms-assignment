@@ -1,4 +1,4 @@
-## Content Management System (CMS)
+# Content Management System (CMS)
 
 A full-stack Content Management System (CMS) that enables administrators to create, edit, publish, and manage dynamic website pages. The public website renders pages dynamically from the CMS without requiring frontend code changes.
 
