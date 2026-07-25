@@ -200,13 +200,13 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 ```
 
-Admin (.env)
+Admin-Frontend (.env)
 
 ```
 VITE_API_URL=http://localhost:5000/api
 ```
 
-Public Website (.env)
+Public-Frontend (.env)
 
 ```
 VITE_API_URL=http://localhost:5000/api
