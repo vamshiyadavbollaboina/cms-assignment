@@ -553,19 +553,13 @@ Replace the placeholders below with your project screenshots.
 # Future Improvements
 
 - Drag-and-Drop Block Editor
-- Rich Text Editor
 - Media Library
-- Version History
 - Live Preview
 - Role-Based Access Control (RBAC)
 - Search & Filtering
 - Analytics Dashboard
 - Theme Management
-- Page Scheduling
-- Multi-language Support
 - Image Upload Integration
-- Autosave Drafts
-- Content Revision History
 
 ---
 
@@ -580,7 +574,6 @@ Replace the placeholders below with your project screenshots.
 | Node.js | Runtime Environment |
 | Express.js | REST API |
 | MongoDB Atlas | Database |
-| Mongoose | ODM |
 | JWT | Authentication |
 | Render | Backend Deployment |
 | Vercel | Frontend Deployment |
