@@ -514,7 +514,7 @@ Replace the placeholders below with your project screenshots.
 
 **Dashboard**
 
-<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/b7e97166-f14c-4da1-b73b-1b65a5bbd6f7" />
+<img width="600" height="550" alt="image" src="https://github.com/user-attachments/assets/b7e97166-f14c-4da1-b73b-1b65a5bbd6f7" />
 <img width="300" height="550" alt="image" src="https://github.com/user-attachments/assets/62b82f66-427f-4e59-a1bf-0f4cbb1ec1d5" />
 
 
