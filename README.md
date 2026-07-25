@@ -2,8 +2,6 @@
 
 A full-stack Content Management System (CMS) that enables administrators to create, edit, publish, and manage dynamic website pages. The public website renders pages dynamically from the CMS without requiring frontend code changes.
 
----
-
 ## Live Demo
 
 ### Public Website
@@ -130,7 +128,7 @@ cms-project/
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/vamshiyadavbollaboina/cms-assignment.git
 ```
 
 ---
