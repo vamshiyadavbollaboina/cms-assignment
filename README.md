@@ -103,7 +103,13 @@ https://content-management-system-bwf7.onrender.com
           Public React Website
 ```
 
-The Admin Panel communicates with the backend through REST APIs. Page data is stored in MongoDB Atlas. The public website dynamically fetches published pages using their slug and renders them through reusable React components.
+The application follows a headless CMS architecture, where the admin panel, backend API, and public website are separated into independent applications that communicate through REST APIs.
+
+Admin Panel (React + Tailwind CSS): Allows administrators to create, edit, publish, and manage pages using a block-based content editor. All content changes are sent to the backend through secure API endpoints.
+
+Backend (Node.js + Express + MongoDB): Serves as the central content management layer. It handles authentication, CRUD operations for pages, validates requests, and stores structured page data in MongoDB. It exposes REST APIs consumed by both the admin panel and the public website.
+
+Public Website (React): Dynamically renders published pages by requesting content from the backend based on the page slug. A reusable block renderer converts stored content blocks (headings, paragraphs, images, lists, tables, etc.) into responsive UI components, allowing new pages to appear without requiring code changes.
 
 ---
 
