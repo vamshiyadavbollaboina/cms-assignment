@@ -489,8 +489,6 @@ admin123
 
 # Screenshots
 
-Replace the placeholders below with your project screenshots.
-
 ## 1. Public Website
 
 **Home Page**
