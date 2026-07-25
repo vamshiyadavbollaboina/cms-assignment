@@ -496,6 +496,8 @@ Replace the placeholders below with your project screenshots.
 **Home Page**
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/09105c5a-2e03-4805-849a-fcb16a2cea91" />
+<img width="451" height="800" alt="image" src="https://github.com/user-attachments/assets/e7f58448-d32e-4727-a7f8-e5e6bc0fe472" />
+
 
 
 ---
