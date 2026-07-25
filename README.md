@@ -495,7 +495,8 @@ Replace the placeholders below with your project screenshots.
 **Home Page**
 
 ```
-Insert Screenshot Here
+<img width="1061" height="894" alt="image" src="https://github.com/user-attachments/assets/a3c1e126-8d3e-4c2b-af59-409b6bfa5b29" />
+
 ```
 
 ---
