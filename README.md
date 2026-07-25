@@ -574,22 +574,8 @@ Replace the placeholders below with your project screenshots.
 | Node.js | Runtime Environment |
 | Express.js | REST API |
 | MongoDB Atlas | Database |
-| JWT | Authentication |
 | Render | Backend Deployment |
 | Vercel | Frontend Deployment |
-
----
-
-# Deliverables
-
-- ✅ Source Code
-- ✅ GitHub Repository
-- ✅ README Documentation
-- ✅ Environment Variable Templates
-- ✅ Sample Admin Credentials
-- ✅ Live Admin Panel
-- ✅ Live Public Website
-- ✅ Live Backend API
 
 ---
 
