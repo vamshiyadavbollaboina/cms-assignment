@@ -495,7 +495,7 @@ Replace the placeholders below with your project screenshots.
 **Home Page**
 
 ```
-<img width="1061" height="894" alt="image" src="https://github.com/user-attachments/assets/a3c1e126-8d3e-4c2b-af59-409b6bfa5b29" />
+![Admin Dashboard](https://res.cloudinary.com/dq1rqwebs/image/upload/v1784985945/Screenshot_2026-07-25_185522_s5bvv5.png)
 
 ```
 
